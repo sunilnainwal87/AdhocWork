@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jim Corbett Taxi Operator Society - Receipt</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f0f0f0;
+    }
+
+    .receipt {
+      width: 700px;
+      margin: 0 auto;
+      border: 2px solid #000;
+      padding: 16px 20px;
+      background: #fff;
+    }
+
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+      padding: 6px 0;
+      margin-bottom: 8px;
+    }
+
+    .header img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+
+    .header-text {
+      text-align: center;
+    }
+
+    .header-text h1 {
+      margin: 0;
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .header-text p {
+      margin: 2px 0 0;
+      font-size: 13px;
+    }
+
+    .field-row {
+      display: flex;
+      align-items: baseline;
+      margin: 8px 0;
+      font-size: 14px;
+    }
+
+    .field-row .label {
+      white-space: nowrap;
+      font-weight: bold;
+      min-width: 170px;
+    }
+
+    .dotted-line {
+      flex: 1;
+      border-bottom: 1px dotted #000;
+      margin: 0 4px;
+      min-width: 40px;
+    }
+
+    .double-field-row {
+      display: flex;
+      align-items: baseline;
+      margin: 8px 0;
+      font-size: 14px;
+      gap: 10px;
+    }
+
+    .double-field-row .half {
+      display: flex;
+      align-items: baseline;
+      flex: 1;
+    }
+
+    .double-field-row .half .label {
+      white-space: nowrap;
+      font-weight: bold;
+    }
+
+    .date-range-row {
+      display: flex;
+      align-items: baseline;
+      margin: 8px 0;
+      font-size: 14px;
+      gap: 6px;
+    }
+
+    .date-range-row .label {
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .total-cash-row {
+      display: flex;
+      align-items: baseline;
+      margin: 8px 0;
+      font-size: 14px;
+      gap: 6px;
+    }
+
+    .total-cash-row .label {
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .total-cash-row .cash-received {
+      white-space: nowrap;
+      font-weight: bold;
+    }
+
+    .signature-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 28px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .address-block {
+      display: flex;
+      flex-direction: column;
+      margin: 4px 0 4px 0;
+    }
+
+    .address-line {
+      display: flex;
+      align-items: baseline;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="receipt">
+    <!-- Top Row -->
+    <div class="top-row">
+      <span>Reg. No. 5627 HA</span>
+      <span>20 January 2021</span>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+      <!-- Tiger logo placeholder (matching original) -->
+      <div style="font-size: 40px; line-height:1;">🐯</div>
+      <div class="header-text">
+        <h1>Jim Corbett Taxi Operator Society</h1>
+        <p>Haldwani Bus Stand, Ramnagar (Nainital) Uttarakhand</p>
+        <p>Mo : 9411399640</p>
+      </div>
+    </div>
+
+    <!-- Vehicle No. and Date -->
+    <div class="double-field-row">
+      <div class="half">
+        <span class="label">Vehicle No.</span>
+        <span class="dotted-line"></span>
+      </div>
+      <div class="half" style="max-width:220px;">
+        <span class="label">Date</span>
+        <span class="dotted-line"></span>
+      </div>
+    </div>
+
+    <!-- From / To -->
+    <div class="double-field-row">
+      <div class="half">
+        <span class="label">From</span>
+        <span class="dotted-line"></span>
+      </div>
+      <div class="half">
+        <span class="label">To</span>
+        <span class="dotted-line"></span>
+      </div>
+    </div>
+
+    <!-- Passenger Name and Address -->
+    <div class="address-block">
+      <div class="address-line">
+        <span class="label" style="font-weight:bold; font-size:14px; min-width:210px;">Passenger's Name and Address</span>
+        <span class="dotted-line"></span>
+      </div>
+      <div class="address-line" style="margin-top:4px;">
+        <span class="dotted-line"></span>
+      </div>
+    </div>
+
+    <!-- Date From To range -->
+    <div class="date-range-row" style="margin-top: 10px;">
+      <span class="label">Date</span>
+      <span class="dotted-line"></span>
+      <span class="label">From</span>
+      <span class="dotted-line"></span>
+      <span class="label">To</span>
+      <span class="dotted-line"></span>
+    </div>
+
+    <!-- Total Payment -->
+    <div class="field-row">
+      <span class="label">Total Payment</span>
+      <span class="dotted-line"></span>
+    </div>
+
+    <!-- Advance -->
+    <div class="field-row">
+      <span class="label">Advance</span>
+      <span class="dotted-line"></span>
+    </div>
+
+    <!-- Balance -->
+    <div class="field-row">
+      <span class="label">Balance</span>
+      <span class="dotted-line"></span>
+    </div>
+
+    <!-- Total Payment - Cash Received -->
+    <div class="total-cash-row">
+      <span class="label">Total Payment</span>
+      <span class="dotted-line"></span>
+      <span class="cash-received">Cash Received.</span>
+    </div>
+
+    <!-- Signature Row -->
+    <div class="signature-row">
+      <span>Passenger's Signature</span>
+      <span>Sd/- President</span>
+      <span>Sd/- Driver</span>
+    </div>
+  </div>
+</body>
+</html>
